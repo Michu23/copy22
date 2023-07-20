@@ -2312,8 +2312,6 @@ a {
 
 .menu__container:hover p {
   
-  transform: translateY(250px);
-  -webkit-transform: translateY(250px);
   opacity: 0.7;
 }
 
