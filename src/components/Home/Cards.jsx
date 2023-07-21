@@ -236,7 +236,7 @@ const CM1 = () => {
   return (
     <div className="mob__card__container">
       <div className="image__mob">
-        <img src={Embark} className="cc" />
+        <img src={Embark} className="cc mm" />
       </div>
       <div className="text__mob">
         <div className="subs__mob">
@@ -303,7 +303,7 @@ const CM2 = () => {
   return (
     <div className="mob__card__container">
       <div className="image__mob">
-        <img src={Effortless} className="cc" />
+        <img src={Effortless} className="cc mm" />
       </div>
       <div className="text__mob">
         <div className="subs__mob">
@@ -354,7 +354,7 @@ const CM3 = () => {
   return (
     <div className="mob__card__container">
       <div className="image__mob">
-        <img src={Noshow} className="cc" />
+        <img src={Noshow} className="cc mm" />
       </div>
       <div className="text__mob">
         <div className="subs__mob">
@@ -405,7 +405,7 @@ const CM4 = () => {
   return (
     <div className="mob__card__container">
       <div className="image__mob">
-        <img src={Prioritize} className="cc" />
+        <img src={Prioritize} className="cc mm" />
       </div>
       <div className="text__mob">
         
@@ -431,7 +431,7 @@ const CM5 = () => {
   return (
     <div className="mob__card__container">
       <div className="image__mob">
-        <img src={Embark} className="cc" />
+        <img src={Embark} className="cc mm" />
       </div>
       <div className="text__mob">
         

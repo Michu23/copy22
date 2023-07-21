@@ -10,8 +10,7 @@ import Pipeline from "../components/Home/Pipeline";
 import Success from "../components/Home/Success";
 import FAQs from "../components/Home/FAQs";
 import BannerMob from "../assets/Mobile/BannerMob.svg";
-import Banner2 from "../components/Home/Banner";
-import Bannerr from "../assets/Hero/Bannerr.svg";
+import Bannerr from "../assets/Hero/BannerFinal.svg";
 
 import Group1 from "../assets/Group1.svg";
 import Group2 from "../assets/Group2.svg";
@@ -80,14 +79,13 @@ const Home = () => {
                 </div>
                 <div className="menu__container"
                  onMouseEnter={() =>{
-
                   setTimeout(() =>{
                     setCard("Data");
                   },500);
                 }}
                 onMouseLeave={() =>{
                   setCard("");
-                  
+
                 }}
                 >
                   <div className="menu c5 ">
@@ -185,7 +183,10 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <img src={Bannerr} alt="" />
+              <img src={Bannerr} style={{
+                marginTop: "-15rem",
+                width: "100%",
+              }} alt="" />
               {/* <Banner /> */}
               
             </div>

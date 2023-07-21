@@ -163,7 +163,6 @@ const FAQs = () => {
               <div className="mob__faq" key={index}>
                 <div className="mob__top">
                   <div className="mob__q">
-                    <h4>{faq.sl}</h4>
                     <h4>{faq.question}</h4>
                   </div>
                   <div
