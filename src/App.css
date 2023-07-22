@@ -70,7 +70,7 @@ body {
   flex-direction: column;
   flex-shrink: 0;
   color: white;
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -86,7 +86,7 @@ body {
 }
 
 .nav a {
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -113,7 +113,7 @@ body {
 }
 
 .connect a {
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -195,7 +195,7 @@ body {
   color: rgba(171, 188, 214, 1) !important;
   text-align: center;
 
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 1rem;
   font-style: normal;
   font-weight: 425;
@@ -231,7 +231,7 @@ body {
   text-decoration: none;
 
   /* buttons/btn-xl-bold-01 */
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 700;
@@ -344,7 +344,7 @@ body {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 500;
@@ -396,7 +396,7 @@ body {
 
 .subs__mob p {
   /* body/bmd-semibold-01 */
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 500;
@@ -432,7 +432,7 @@ body {
 
 .subs p {
   /* body/bmd-semibold-01 */
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 500;
@@ -480,7 +480,7 @@ body {
   color: var(--secondary-text, #b9c7dc);
 
   /* body/bl-regular-01 */
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 1rem;
   font-style: normal;
   font-weight: 425;
@@ -491,7 +491,7 @@ body {
 .text__mob > .headings h1 {
   /* width: 20rem; */
 
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 1.9375rem;
   font-style: normal;
   font-weight: 700;
@@ -513,7 +513,7 @@ body {
   color: var(--secondary-text, #b9c7dc);
 
   /* body/bl-regular-01 */
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 1rem;
   font-style: normal;
   font-weight: 425;
@@ -550,7 +550,7 @@ body {
 
 .know__more span {
   /* buttons/btn-md-bold-01 */
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 700;
@@ -592,7 +592,7 @@ a {
   flex-direction: column;
   margin: 0;
   /* heading/h2-bold-01 */
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 3rem;
   font-style: normal;
   font-weight: 700;
@@ -694,7 +694,7 @@ a {
   justify-content: center;
 
   /* heading/h4/h4-bold-01 */
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 2.0625rem;
   font-style: normal;
   font-weight: 700;
@@ -714,7 +714,7 @@ a {
   color: var(--secondary-text, #b9c7dc);
 
   /* body/bl-regular-01 */
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 1rem;
   font-style: normal;
   font-weight: 425;
@@ -729,7 +729,7 @@ a {
   color: var(--secondary-text, #b9c7dc);
 
   /* body/bl-regular-01 */
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 1rem;
   font-style: normal;
   font-weight: 425;
@@ -743,7 +743,7 @@ a {
   justify-content: center;
   margin: 0;
   /* heading/h4/h4-bold-01 */
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 2.0625rem;
   font-style: normal;
   font-weight: 700;
@@ -776,7 +776,7 @@ a {
   /* width: 19.875rem; */
   flex-direction: column;
 
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 2.5rem;
   font-style: normal;
   font-weight: 700;
@@ -795,7 +795,7 @@ a {
   text-align: center;
 
   /* heading/h2-bold-01 */
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 3rem;
   font-style: normal;
   font-weight: 700;
@@ -842,7 +842,7 @@ a {
   margin: 0;
 
   /* heading/h4/h4-medium-01 */
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 2.0625rem;
   font-style: normal;
   font-weight: 500;
@@ -863,7 +863,7 @@ a {
   color: var(--secondary-text, #b9c7dc);
 
   /* body/bl-regular-01 */
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 1rem;
   font-style: normal;
   font-weight: 425;
@@ -899,7 +899,7 @@ a {
   text-edge: cap;
 
   /* buttons/btn-md-bold-01 */
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 700;
@@ -961,7 +961,7 @@ a {
   margin: 0;
 
   /* heading/h2-bold-01 */
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 3rem;
   font-style: normal;
   font-weight: 700;
@@ -1025,7 +1025,7 @@ a {
   flex-direction: column;
   justify-content: center;
 
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 2.0625rem;
   font-style: normal;
   font-weight: 600;
@@ -1047,7 +1047,7 @@ a {
   color: var(--secondary-text, #b9c7dc);
 
   /* body/bl-regular-01 */
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 1rem;
   font-style: normal;
   font-weight: 425;
@@ -1093,7 +1093,7 @@ a {
 
   margin: 0;
 
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 1.4375rem;
   font-style: normal;
   font-weight: 600;
@@ -1115,7 +1115,7 @@ a {
   color: var(--secondary-text, #b9c7dc);
   margin: 0;
 
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 500;
@@ -1129,7 +1129,7 @@ a {
 .spercentage {
   margin: 0;
 
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 2.5rem;
   font-style: normal;
   font-weight: 700;
@@ -1146,7 +1146,7 @@ a {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   color: var(--secondary-text, #B9C7DC);
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 1rem;
   font-style: normal;
   font-weight: 425;
@@ -1178,7 +1178,7 @@ a {
   text-align: center;
 
   /* heading/h2-bold-01 */
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 3rem;
   font-style: normal;
   font-weight: 700;
@@ -1212,7 +1212,7 @@ a {
   margin: 0;
 
   /* heading/h4/h4-bold-01 */
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 2.0625rem;
   font-style: normal;
   font-weight: 700;
@@ -1240,7 +1240,7 @@ a {
 
 .qna h5 {
   /* heading/h5/h5-semibold-01 */
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 1.75rem;
   font-style: normal;
   font-weight: 600;
@@ -1258,7 +1258,7 @@ a {
   width: 56.25rem;
   color: var(--secondary-text, #b9c7dc);
   /* body/bl-regular-01 */
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 1.2rem;
   font-style: normal;
   font-weight: 425;
@@ -1346,7 +1346,7 @@ a {
   width: 28.59875rem;
 
   /* heading/h2-bold-01 */
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 3rem;
   font-style: normal;
   font-weight: 700;
@@ -1372,7 +1372,7 @@ a {
   align-self: stretch;
 
   color: var(--secondary-text, #b9c7dc);
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 400;
@@ -1404,7 +1404,7 @@ a {
   text-decoration: none !important;
 
   /* buttons/btn-xl-bold-01 */
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 700;
@@ -1446,7 +1446,7 @@ a {
   color: var(--secondary-text, #b9c7dc);
 
   /* body/bl-regular-01 */
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 1rem;
   font-style: normal;
   font-weight: 425;
@@ -1471,7 +1471,7 @@ a {
   color: var(--secondary-text, #b9c7dc);
 
   /* body/bl-regular-01 */
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 1rem;
   font-style: normal;
   font-weight: 425;
@@ -1482,7 +1482,7 @@ a {
 
 .footer__links b {
   /* body/bl-bold-01 */
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 1rem;
   font-style: normal;
   font-weight: 700;
@@ -1542,7 +1542,7 @@ a {
 }
 
 .banner__heading {
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 2.8875rem;
   font-style: normal;
   font-weight: 700;
@@ -1565,7 +1565,7 @@ a {
 
 .banner__component__content p {
   color: #abbcd6;
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 1.2rem;
   font-style: normal;
   font-weight: 400;
@@ -1596,7 +1596,7 @@ a {
   color: var(--color-text-txt-blue-primary, #113ddd);
   leading-trim: both;
   text-edge: cap;
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 700;
@@ -1656,7 +1656,7 @@ a {
 .navs a {
   width: 8.75rem;
   color: var(--color-bg-bg-white, #fff);
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 1rem;
   font-style: normal;
   font-weight: 500;
@@ -1726,7 +1726,7 @@ a {
   text-edge: cap;
 
   /* buttons/btn-md-bold-01 */
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 700;
@@ -1758,7 +1758,7 @@ a {
   bottom: -0.45169rem;
 
   color: #fff;
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 2rem;
   font-style: normal;
   font-weight: 700;
@@ -1774,7 +1774,7 @@ a {
   margin: 0;
 
   /* body/bl-regular-01 */
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 1rem;
   font-style: normal;
   font-weight: 425;
@@ -1800,7 +1800,7 @@ a {
 
 .pp__mob h2 {
   color: #fff;
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 2rem;
   font-style: normal;
   font-weight: 700;
@@ -1828,7 +1828,7 @@ a {
   justify-content: center;
 
   color: #f5f9ff;
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 500;
@@ -1840,7 +1840,7 @@ a {
   color: var(--secondary-text, #b9c7dc);
 
   /* body/bl-regular-01 */
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 1rem;
   font-style: normal;
   font-weight: 425;
@@ -1885,7 +1885,7 @@ a {
 
 .success__mob h2 {
   color: #fff;
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 2rem;
   font-style: normal;
   font-weight: 700;
@@ -1914,7 +1914,7 @@ a {
 
 .mob__box__content h4 {
   color: #f5f9ff;
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 1.475rem;
   font-style: normal;
   font-weight: 600;
@@ -1927,7 +1927,7 @@ a {
   color: var(--secondary-text, #b9c7dc);
 
   /* body/bl-regular-01 */
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 1.1rem;
   font-style: normal;
   font-weight: 425;
@@ -1944,7 +1944,7 @@ a {
 
 .mob__rating h4 {
   /* heading/h3-bold-01 */
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 2.5rem;
   font-style: normal;
   font-weight: 700;
@@ -1959,7 +1959,7 @@ a {
 
 .rating__content p {
   /* body/bl-regular-01 */
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 1.1rem;
   font-style: normal;
   font-weight: 425;
@@ -2011,7 +2011,7 @@ a {
 
 .faq__mob h2 {
   color: #fff;
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 1.9375rem;
   font-style: normal;
   font-weight: 700;
@@ -2046,7 +2046,7 @@ a {
 
 .mob__q h4 {
   color: #f5f9ff;
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 1.2rem;
   font-style: normal;
   font-weight: 600;
@@ -2067,7 +2067,7 @@ a {
   color: var(--secondary-text, #b9c7dc);
 
   /* body/bl-regular-01 */
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 1rem;
   font-style: normal;
   font-weight: 425;
@@ -2107,7 +2107,7 @@ a {
 }
 
 .footer1__mob h1 {
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 700;
@@ -2122,7 +2122,7 @@ a {
 
 .footer1__mob p {
   color: var(--secondary-text, #b9c7dc);
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
@@ -2151,7 +2151,7 @@ a {
   color: var(--color-text-txt-black-primary, #060510);
   leading-trim: both;
   text-edge: cap;
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 0.79588rem;
   font-style: normal;
   font-weight: 700;
@@ -2176,7 +2176,7 @@ a {
 }
 
 .footer2__mob h2 {
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 2.4rem;
   font-style: normal;
   font-weight: 700;
@@ -2191,7 +2191,7 @@ a {
 
 .footer2__mob p {
   color: var(--secondary-text, #b9c7dc);
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 1rem;
   font-style: normal;
   font-weight: 425;
@@ -2232,7 +2232,7 @@ a {
 
 .f3ml h3 {
   /* body/bl-bold-01 */
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 1rem;
   font-style: normal;
   font-weight: 700;
@@ -2248,7 +2248,7 @@ a {
 
 .f32 a {
   color: var(--secondary-text, #b9c7dc);
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 0.81rem;
   font-style: normal;
   font-weight: 425;
@@ -2332,7 +2332,7 @@ a {
 }
 
 .menu h3 {
-  font-family: Instrument Sans;
+  font-family: "PolySans Trial Median", sans-serif !important;
   font-size: 1rem;
   line-height: 1.5;
   height: 50px;
