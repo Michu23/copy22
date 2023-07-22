@@ -20,9 +20,9 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap");
 
-body {
+/* body {
   font-family: "PolySans Trial Median", sans-serif !important;
-}
+} */
 
 /*****************************  Header  **************************************/
 
@@ -460,8 +460,6 @@ body {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   /* heading/h2-bold-01 */
-  font-family: Instrument Sans Impact, Haettenschweiler, "Arial Narrow Bold",
-    sans-serif;
   font-size: 3rem;
   font-style: Bold !important;
   font-weight: 700;
