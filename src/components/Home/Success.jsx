@@ -1,230 +1,424 @@
-import React from 'react'
-import Left from '../../assets/leftarrow.svg'
-import Right from '../../assets/rightarrow.svg'
-import Pro from '../../assets/Success/propic.png'
+import React, { useRef, useState } from "react";
+import Left from "../../assets/leftarrow.svg";
+import Right from "../../assets/rightarrow.svg";
+import Pro from "../../assets/Success/propic.png";
 
 const Success = () => {
-    return (
-        <>
-        <div className="display__desktop">
-             <div className='first'>
-            <div className="success">
-                <div className="scontent">
-                    <div className="stop">
-                        <h2 className="sheading">
-                            Success Stories
-                        </h2>
-                        <div className="snav">
-                            <img src={Left} alt="" />
-                            <img src={Right} alt="" />
-                        </div>
+  const containerRef = useRef(null);
 
-                    </div>
-                    
-                </div><div className="stories" style={{ whiteSpace: 'nowrap' }}>
-                        <div className="story">
-                            <div className="storytext">
-                                <h2 className="storyheading">
-                                    Positioning our brand by highlighting
-                                    <br />
-                                    success stories that back
-                                </h2>
-                                <p className="storytext">
-                                    Our data management solutions offer full observability and monitoring capabilities across every data operation, providing you with the confidence to fully trust and rely on your data.
-                                </p>
-                                <hr className='shr' />
-                                <div className="rating">
-                                    <div className="rating__people">
-                                        
-                                        <img src={Pro} alt="" />
-                                        <div className="ratinginfo">
-                                            <h6 className="ratingname">
-                                                Bashooka
-                                            </h6>
-                                            <p className='ratingrole'>
-                                                CEO
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div className="star__rating">
-                                        <h3 className="spercentage">
-                                            50%
-                                        </h3>
-                                        <p className="scontent">
-                                        Reduction in time from raw data <br />
-to insights on a dashboard                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="story">
-                            <div className="storytext">
-                                <h2 className="storyheading">
-                                    Positioning our brand by highlighting
-                                    <br />
-                                    success stories that back
-                                </h2>
-                                <p className="storytext">
-                                    Our data management solutions offer full observability and monitoring capabilities across every data operation, providing you with the confidence to fully trust and rely on your data.
-                                </p>
-                                <hr className='shr' />
-                                <div className="rating">
-                                    <div className="rating__people">
-                                        <img src={Pro} alt="" />
-                                        <div className="ratinginfo">
-                                            <h6 className="ratingname">
-                                                Bashooka
-                                            </h6>
-                                            <p className='ratingrole'>
-                                                CEO
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div className="star__rating">
-                                        <h3 className="spercentage">
-                                            50%
-                                        </h3>
-                                        <p className="scontent">
-                                        Reduction in time from raw data <br />
-to insights on a dashboard                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="story">
-                            <div className="storytext">
-                                <h2 className="storyheading">
-                                    Positioning our brand by highlighting
-                                    <br />
-                                    success stories that back
-                                </h2>
-                                <p className="storytext">
-                                    Our data management solutions offer full observability and monitoring capabilities across every data operation, providing you with the confidence to fully trust and rely on your data.
-                                </p>
-                                <hr className='shr' />
-                                <div className="rating">
-                                    <div className="rating__people">
-                                        <img src={Pro} alt="" />
-                                        <div className="ratinginfo">
-                                            <h6 className="ratingname">
-                                                Bashooka
-                                            </h6>
-                                            <p className='ratingrole'>
-                                                CEO
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div className="star__rating">
-                                        <h3 className="spercentage">
-                                            50%
-                                        </h3>
-                                        <p className="scontent">
-                                        Reduction in time from raw data <br />
-to insights on a dashboard                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="story">
-                            <div className="storytext">
-                                <h2 className="storyheading">
-                                    Positioning our brand by highlighting
-                                    <br />
-                                    success stories that back
-                                </h2>
-                                <p className="storytext">
-                                    Our data management solutions offer full observability and monitoring capabilities across every data operation, providing you with the confidence to fully trust and rely on your data.
-                                </p>
-                                <hr className='shr' />
-                                <div className="rating">
-                                    <div className="rating__people">
-                                        <img src={Pro} alt="" />
-                                        <div className="ratinginfo">
-                                            <h6 className="ratingname">
-                                                Bashooka
-                                            </h6>
-                                            <p className='ratingrole'>
-                                                CEO
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div className="star__rating">
-                                        <h3 className="spercentage">
-                                            50%
-                                        </h3>
-                                        <p className="scontent">
-                                        Reduction in time from raw data <br />
-to insights on a dashboard                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+  const scrollToRight = () => {
+    const container = containerRef.current;
+    if (container) {
+      const targetScrollLeft = container.scrollLeft + 800; // Calculate the target scroll position
+      const duration = 500; // Set the duration for the smooth scroll (in milliseconds)
+      smoothScrollTo(container, targetScrollLeft, duration);
+    }
+  };
+  const scrollToLeft = () => {
+    const container = containerRef.current;
+    if (container) {
+      const targetScrollLeft = container.scrollLeft - 800; // Calculate the target scroll position
+      const duration = 500; // Set the duration for the smooth scroll (in milliseconds)
+      smoothScrollTo(container, targetScrollLeft, duration);
+    }
+  };
 
-                      
-                      
+  const smoothScrollTo = (element, targetScrollLeft, duration) => {
+    const startScrollLeft = element.scrollLeft;
+    const distance = targetScrollLeft - startScrollLeft;
+    let startTime = null;
 
-                    </div>
-            </div>
-        </div>
-        </div>
+    const step = (timestamp) => {
+      if (!startTime) startTime = timestamp;
+      const progress = timestamp - startTime;
+      const scrollFraction = progress / duration;
+      const scrollLeft = startScrollLeft + distance * scrollFraction;
 
-        <div className="display__mobile">
-        <div className="success__mob">
-            <h2>
-        Success Stories
-            </h2>
+      element.scrollLeft = scrollLeft;
 
-            <div className="success__mob__boxes">
-                <div className="mob__box__content">
-                    <h4>
-                    Positioning our brand by
-highlighting success stories 
-that back 
-                    </h4>
-                    <p>
-                    Our data management solutions offer full observability and monitoring capabilities across every data operation, providing you with the confidence to fully trust and rely on your data.
-                    </p>
-                    <hr />
+      if (progress < duration) {
+        // Continue smooth scrolling
+        requestAnimationFrame(step);
+      }
+    };
 
-                    <div className="mob__rating">
-                        <div className="mob__perc">
-                            <h4>
-                                50%
-                            </h4>
-                        </div>
-                        <div className="rating__content">
-                            <p>
-                            Reduction in time from raw
-data to insights on a 
-dashboard
-                            </p>
-                        </div>
-                    </div>
-                    <hr />
-                    <div className="mob__success__profile">
-                        <img src={Pro} alt="" />
-                        <div className="ratinginfo">
-                            <h6 className="ratingname">
-                                Bashooka
-                            </h6>
-                            <p className='ratingrole'>
-                                CEO
-                            </p>
-                        </div>
-                    </div>
+    // Start the smooth scrolling animation
+    requestAnimationFrame(step);
+  };
+
+  const [touchStartX, setTouchStartX] = useState(null);
+
+  const handleTouchStart = (e) => {
+    setTouchStartX(e.touches[0].clientX);
+  };
+
+  const handleTouchMove = (e) => {
+    if (!touchStartX) return;
+
+    const container = containerRef.current;
+    if (!container) return;
+
+    const touchCurrentX = e.touches[0].clientX;
+    const touchDeltaX = touchCurrentX - touchStartX;
+    container.scrollLeft -= touchDeltaX;
+
+    setTouchStartX(touchCurrentX);
+  };
+
+  const handleTouchEnd = () => {
+    setTouchStartX(null);
+  };
+
+  const scrollToRightt = () => {
+    const container = containerRef.current;
+    if (container) {
+      const targetScrollLeft = container.scrollLeft + 420; // Calculate the target scroll position
+      const duration = 500; // Set the duration for the smooth scroll (in milliseconds)
+      smoothScrollToo(container, targetScrollLeft, duration);
+    }
+  };
+
+  const scrollToLeftt = () => {
+    const container = containerRef.current;
+    if (container) {
+      const targetScrollLeft = container.scrollLeft - 420; // Calculate the target scroll position
+      const duration = 500; // Set the duration for the smooth scroll (in milliseconds)
+      smoothScrollToo(container, targetScrollLeft, duration);
+    }
+  };
+
+  const smoothScrollToo = (element, targetScrollLeft, duration) => {
+    const startScrollLeft = element.scrollLeft;
+    const distance = targetScrollLeft - startScrollLeft;
+    let startTime = null;
+
+    const step = (timestamp) => {
+      if (!startTime) startTime = timestamp;
+      const progress = timestamp - startTime;
+      const scrollFraction = progress / duration;
+      const scrollLeft = startScrollLeft + distance * scrollFraction;
+
+      element.scrollLeft = scrollLeft;
+
+      if (progress < duration) {
+        // Continue smooth scrolling
+        requestAnimationFrame(step);
+      }
+    };
+
+    // Start the smooth scrolling animation
+    requestAnimationFrame(step);
+  };
+
+  const successStories = [
+    {
+      heading:
+        "Positioning our brand by highlighting success stories that back",
+      para: "Our data management solutions offer full observability and monitoring capabilities across every data operation, providing you with the confidence to fully trust and rely on your data. Reduction in time from raw data to insights on a dashboard. Reduction in time from raw data to insights on a dashboard. Reduction in time from raw data to insights on a dashboard. Reduction in time from raw data to insights on a dashboard. Reduction in time from raw data to insights on a dashboard. ",
+      img: Pro,
+      name: "Bashooka",
+      position: "CEO",
+      percentage: "50%",
+      ratetext: "Reduction in time from raw data to insights on a dashboard.",
+    },
+    {
+      heading:
+        "Positioning our brand by highlighting success stories that back",
+      para: "Our data management solutions offer full observability and monitoring capabilities across every data operation, providing you with the confidence to fully trust and rely on your data.",
+      img: Pro,
+      name: "Bashooka",
+      position: "CEO",
+      percentage: "50%",
+      ratetext: "Reduction in time from raw data to insights on a dashboard",
+    },
+    {
+      heading:
+        "Positioning our brand by highlighting success stories that back",
+      para: "Our data management solutions offer full observability and monitoring capabilities across every data operation, providing you with the confidence to fully trust and rely on your data. Reduction in time from raw data to insights on a dashboard. Reduction in time from raw data to insights on a dashboard. Reduction in time from raw data to insights on a dashboard. Reduction in time from raw data to insights on a dashboard.",
+      img: Pro,
+      name: "Bashooka",
+      position: "CEO",
+      percentage: "50%",
+      ratetext: "Reduction in time from raw data to insights on a dashboard",
+    },
+    {
+      heading:
+        "Positioning our brand by highlighting success stories that back",
+      para: "Our data management solutions offer full observability and monitoring capabilities across every data operation, providing you with the confidence to fully trust and rely on your data. Reduction in time from raw data to insights on a dashboard. Reduction in time from raw data to insights on a dashboard. Reduction in time from raw data to insights on a dashboard. Reduction in time from raw data to insights on a dashboard. Reduction in time from raw data to insights on a dashboard. Reduction in time from raw data to insights on a dashboard. Reduction in time from raw data to insights on a dashboard. Reduction in time from raw data to insights on a dashboard. Reduction in time from raw data to insights on a dashboard.",
+      img: Pro,
+      name: "Bashooka",
+      position: "CEO",
+      percentage: "50%",
+      ratetext: "Reduction in time from raw data to insights on a dashboard",
+    },
+    {
+      heading:
+        "Positioning our brand by highlighting success stories that back",
+      para: "Our data management solutions offer full observability and monitoring capabilities across every data operation, providing you with the confidence to fully trust and rely on your data.",
+      img: Pro,
+      name: "Bashooka",
+      position: "CEO",
+      percentage: "50%",
+      ratetext: "Reduction in time from raw data to insights on a dashboard",
+    },
+    {
+      heading:
+        "Positioning our brand by highlighting success stories that back",
+      para: "Our data management solutions offer full observability and monitoring capabilities across every data operation, providing you with the confidence to fully trust and rely on your data.",
+      img: Pro,
+      name: "Bashooka",
+      position: "CEO",
+      percentage: "50%",
+      ratetext: "Reduction in time from raw data to insights on a dashboard",
+    },
+    {
+      heading:
+        "Positioning our brand by highlighting success stories that back",
+      para: "Our data management solutions offer full observability and monitoring capabilities across every data operation, providing you with the confidence to fully trust and rely on your data.",
+      img: Pro,
+      name: "Bashooka",
+      position: "CEO",
+      percentage: "50%",
+      ratetext: "Reduction in time from raw data to insights on a dashboard",
+    },
+    {
+      heading:
+        "Positioning our brand by highlighting success stories that back",
+      para: "Our data management solutions offer full observability and monitoring capabilities across every data operation, providing you with the confidence to fully trust and rely on your data.",
+      img: Pro,
+      name: "Bashooka",
+      position: "CEO",
+      percentage: "50%",
+      ratetext: "Reduction in time from raw data to insights on a dashboard",
+    },
+    {
+      heading:
+        "Positioning our brand by highlighting success stories that back",
+      para: "Our data management solutions offer full observability and monitoring capabilities across every data operation, providing you with the confidence to fully trust and rely on your data.",
+      img: Pro,
+      name: "Bashooka",
+      position: "CEO",
+      percentage: "50%",
+      ratetext: "Reduction in time from raw data to insights on a dashboard",
+    },
+  ];
+
+  return (
+    <>
+      <div className="display__desktop">
+        <div className="first">
+          <div className="success">
+            <div className="scontent">
+              <div className="stop">
+                <h2 className="sheading">Success Stories</h2>
+                <div className="snav">
+                  <img src={Left} alt="" onClick={scrollToLeft} />
+                  <img src={Right} alt="" onClick={scrollToRight} />
                 </div>
+              </div>
             </div>
+            <div
+              className="stories"
+              style={{ whiteSpace: "nowrap" }}
+              ref={containerRef}
+            >
+              {successStories.map((story, index) => {
+                return (
+                  <div className="story">
+                    <div className="storytext">
+                      <h2 className="storyheading">{story.heading}</h2>
+                      <div className="textbox">
+                        <p className="storytexts">{story.para}</p>
+                      </div>
 
-            <div className="snav__mob">
-                            <img src={Left} alt="" />
-                            <img src={Right} alt="" />
+                      <hr className="shr" />
+                      <div className="rating">
+                        <div className="rating__people">
+                          <img src={story.img} alt="" />
+                          <div className="ratinginfo">
+                            <h6 className="ratingname">Bashooka</h6>
+                            <p className="ratingrole">CEO</p>
+                          </div>
                         </div>
-           
-        </div>
-        </div>
-        
-        </>
-    )
-}
+                        <div className="star__rating">
+                          <h3 className="spercentage">50%</h3>
+                          <p className="scontent">
+                            Reduction in time from raw data <br />
+                            to insights on a dashboard{" "}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
 
-export default Success
+              <div
+                style={{
+                  padding: "1.5rem",
+                }}
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="display__mobile">
+        <div className="success__mob">
+          <h2>Success Stories</h2>
+          <div
+            ref={containerRef}
+            className="mob__success__box__container"
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
+          >
+            <div className="success__mob__boxes">
+              <div className="mob__box__content">
+                <h4>
+                  Positioning our brand by highlighting success stories that
+                  back
+                </h4>
+                <p>
+                  Our data management solutions offer full observability and
+                  monitoring capabilities across every data operation, providing
+                  you with the confidence to fully trust and rely on your data.
+                </p>
+                <hr />
+
+                <div className="mob__rating">
+                  <div className="mob__perc">
+                    <h4>50%</h4>
+                  </div>
+                  <div className="rating__content">
+                    <p>
+                      Reduction in time from raw data to insights on a dashboard
+                    </p>
+                  </div>
+                </div>
+                <hr />
+                <div className="mob__success__profile">
+                  <img src={Pro} alt="" />
+                  <div className="ratinginfo">
+                    <h6 className="ratingname">Bashooka</h6>
+                    <p className="ratingrole">CEO</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="success__mob__boxes">
+              <div className="mob__box__content">
+                <h4>
+                  Positioning our brand by highlighting success stories that
+                  back
+                </h4>
+                <p>
+                  Our data management solutions offer full observability and
+                  monitoring capabilities across every data operation, providing
+                  you with the confidence to fully trust and rely on your data.
+                </p>
+                <hr />
+
+                <div className="mob__rating">
+                  <div className="mob__perc">
+                    <h4>50%</h4>
+                  </div>
+                  <div className="rating__content">
+                    <p>
+                      Reduction in time from raw data to insights on a dashboard
+                    </p>
+                  </div>
+                </div>
+                <hr />
+                <div className="mob__success__profile">
+                  <img src={Pro} alt="" />
+                  <div className="ratinginfo">
+                    <h6 className="ratingname">Bashooka</h6>
+                    <p className="ratingrole">CEO</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="success__mob__boxes">
+              <div className="mob__box__content">
+                <h4>
+                  Positioning our brand by highlighting success stories that
+                  back
+                </h4>
+                <p>
+                  Our data management solutions offer full observability and
+                  monitoring capabilities across every data operation, providing
+                  you with the confidence to fully trust and rely on your data.
+                </p>
+                <hr />
+
+                <div className="mob__rating">
+                  <div className="mob__perc">
+                    <h4>50%</h4>
+                  </div>
+                  <div className="rating__content">
+                    <p>
+                      Reduction in time from raw data to insights on a dashboard
+                    </p>
+                  </div>
+                </div>
+                <hr />
+                <div className="mob__success__profile">
+                  <img src={Pro} alt="" />
+                  <div className="ratinginfo">
+                    <h6 className="ratingname">Bashooka</h6>
+                    <p className="ratingrole">CEO</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="success__mob__boxes">
+              <div className="mob__box__content">
+                <h4>
+                  Positioning our brand by highlighting success stories that
+                  back
+                </h4>
+                <p>
+                  Our data management solutions offer full observability and
+                  monitoring capabilities across every data operation, providing
+                  you with the confidence to fully trust and rely on your data.
+                </p>
+                <hr />
+
+                <div className="mob__rating">
+                  <div className="mob__perc">
+                    <h4>50%</h4>
+                  </div>
+                  <div className="rating__content">
+                    <p>
+                      Reduction in time from raw data to insights on a dashboard
+                    </p>
+                  </div>
+                </div>
+                <hr />
+                <div className="mob__success__profile">
+                  <img src={Pro} alt="" />
+                  <div className="ratinginfo">
+                    <h6 className="ratingname">Bashooka</h6>
+                    <p className="ratingrole">CEO</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="snav__mob">
+            <img src={Left} alt="" 
+            onClick={scrollToLeftt}
+            />
+            <img src={Right} 
+            onClick={scrollToRightt}
+            alt="" />
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Success;
