@@ -5,8 +5,10 @@ import Pro from "../../assets/Success/propic.png";
 
 const Success = () => {
   const containerRef = useRef(null);
+  const containerRef2 = useRef(null);
 
   const scrollToRight = () => {
+    console.log("Scroll to right");
     const container = containerRef.current;
     if (container) {
       const targetScrollLeft = container.scrollLeft + 800; // Calculate the target scroll position
@@ -24,6 +26,7 @@ const Success = () => {
   };
 
   const smoothScrollTo = (element, targetScrollLeft, duration) => {
+    console.log("Smooth scroll");
     const startScrollLeft = element.scrollLeft;
     const distance = targetScrollLeft - startScrollLeft;
     let startTime = null;
@@ -55,7 +58,7 @@ const Success = () => {
   const handleTouchMove = (e) => {
     if (!touchStartX) return;
 
-    const container = containerRef.current;
+    const container = containerRef2.current;
     if (!container) return;
 
     const touchCurrentX = e.touches[0].clientX;
@@ -70,7 +73,7 @@ const Success = () => {
   };
 
   const scrollToRightt = () => {
-    const container = containerRef.current;
+    const container = containerRef2.current;
     if (container) {
       const targetScrollLeft = container.scrollLeft + 420; // Calculate the target scroll position
       const duration = 500; // Set the duration for the smooth scroll (in milliseconds)
@@ -79,7 +82,7 @@ const Success = () => {
   };
 
   const scrollToLeftt = () => {
-    const container = containerRef.current;
+    const container = containerRef2.current;
     if (container) {
       const targetScrollLeft = container.scrollLeft - 420; // Calculate the target scroll position
       const duration = 500; // Set the duration for the smooth scroll (in milliseconds)
@@ -267,7 +270,7 @@ const Success = () => {
         <div className="success__mob">
           <h2>Success Stories</h2>
           <div
-            ref={containerRef}
+            ref={containerRef2}
             className="mob__success__box__container"
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
