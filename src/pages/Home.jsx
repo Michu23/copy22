@@ -3,6 +3,7 @@ import { ReactComponent as MySvg } from "../assets/Icons/arrow-right-circle.svg"
 import { ReactComponent as Banner } from "../assets/Hero/Banner.svg";
 import { ReactComponent as Ell } from "../assets/Ellips.svg";
 import { ReactComponent as Grid } from "../assets/Maskgroup.svg";
+
 import Companies from "../components/Companies";
 import Cards from "../components/Home/Cards";
 import Lake from "../components/Home/Lake";
@@ -22,8 +23,6 @@ const Home = () => {
 
   const [card,setCard] = useState("");
 
-
-
   return (
     <>
       <div className="display__desktop">
@@ -38,11 +37,7 @@ const Home = () => {
           </div>
           <div className="description">
             <p>
-              Discover a more efficient way to scale your data analytics. Our
-              advanced platform ingests all your data into a single source of
-              truth and provides seamless access to data consumers. Built on an
-              open architecture, it ensures faster, more reliable and scalable
-              deployment of data solutions.
+            Upgrade your data analytics scaling now! Our advanced platform centralizes all your data into one place and offers easy access for data consumers. With an open architecture, it ensures faster, reliable, and scalable data solution deployment.
             </p>
           </div>
           <div className="first">
@@ -55,9 +50,9 @@ const Home = () => {
               <div className="main__container">
                 <div className="menu__container"
                   onMouseEnter={() =>{
-                    setTimeout(() =>{
+                   
                       setCard("Ingestion");
-                    },500);
+                   
                   }}
                   onMouseLeave={() =>{
                     setCard("");
@@ -207,11 +202,7 @@ const Home = () => {
               unlock The value of your data at 10x advantage
             </h1>
             <p>
-              Discover a more efficient way to scale your data analytics. Our
-              advanced platform ingests all your data into a single source of
-              truth and provides seamless access to data consumers. Built on an
-              open architecture, it ensures faster, more reliable and scalable
-              deployment of data solutions.
+            Upgrade your data analytics scaling now! Our advanced platform centralizes all your data into one source and offers easy access for data consumers. With an open architecture, it ensures faster, reliable, and scalable data solution deployment.
             </p>
             <div className="getstarted__mob">
               <a href="hi">Get Started</a>
@@ -220,8 +211,138 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="">
+          <div className="banner__mob">
             <img src={BannerMob} className="banner__img__mobile" alt="" />
+            <div className="main__container__mm">
+                <div className="menu__container__mm"
+                  onMouseEnter={() =>{
+                   
+                      setCard("Ingestion");
+                   
+                  }}
+                  onMouseLeave={() =>{
+                    setCard("");
+                  }}
+                >
+                  <div className="menu c4 ">
+                    <div>
+
+                    <h3>Ingestion</h3>
+                    {
+                      card === "Ingestion" && <p>
+                    With an upstream semantic layer, create a centralized, single source of truth—with consistent metrics you only need to define once.
+                    </p>
+                    }
+                    </div>
+                    <img src={Group4} className="img" alt="" />
+                  </div>
+                </div>
+                <div className="menu__container__mm"
+                 onMouseEnter={() =>{
+                  setTimeout(() =>{
+                    setCard("Data");
+                  },500);
+                }}
+                onMouseLeave={() =>{
+                  setCard("");
+
+                }}
+                >
+                  <div className="menu c5 ">
+                    <div>
+                    <h3>
+                      Data
+                      <br />
+                      Modelling
+                    </h3>
+                    {
+                      card === "Data" && <p>
+                    With an upstream semantic layer, create a centralized, single source of truth—with consistent metrics you only need to define once.
+
+                      </p>
+                    }
+                   </div>
+                    <img src={Group5} className="img" alt="" />
+                  </div>
+                </div>
+                <div className="menu__container__mm"
+                  onMouseEnter={() =>{
+                    setTimeout(() =>{
+                      setCard("Caching");
+                    },500);
+                  }}
+                  onMouseLeave={() =>{
+                    setCard("");
+                  }}
+                >
+                  <div className="menu c1">
+                    <div>
+
+                    <h3>Caching</h3>
+                    {
+                      card === "Caching" && <p>
+                    With an upstream semantic layer, create a centralized, single source of truth—with consistent metrics you only need to define once.
+                    </p>
+                    }
+                   
+                    </div>
+                    <img src={Group1} className="img" alt="" />
+                  </div>
+                </div>
+                <div className="menu__container__mm"
+                   onMouseEnter={() =>{
+                    setTimeout(() =>{
+                      setCard("Access");
+                    },500);
+                  }}
+                  onMouseLeave={() =>{
+                    setCard("");
+                  }}
+                >
+                  <div className="menu c2">
+                    <div>
+
+                    
+                    <h3>
+                      Access
+                      <br />
+                      Control
+                    </h3>
+                    {
+                      card === "Access" && <p>
+                    With an upstream semantic layer, create a centralized, single source of truth—with consistent metrics you only need to define once.
+                    </p>
+                    }
+                   </div>
+                    <img src={Group2} className="img" alt="" />
+                  </div>
+                </div>
+                <div className="menu__container__mm"
+
+                   onMouseEnter={() =>{
+                    setTimeout(() =>{
+                      setCard("API");
+                    },500);
+                  }}
+                  onMouseLeave={() =>{
+                    setCard("");
+                  }}
+                >
+                  <div className="menu c3 ">
+                    <div>
+
+                    <h3>API's</h3>
+                      {
+                        card === "API" && <p>
+                          With an upstream semantic layer, create a centralized, single source of truth—with consistent metrics you only need to define once.
+                        </p>
+                      }
+                   
+                    </div>
+                    <img src={Group3} className="img" alt="" />
+                  </div>
+                </div>
+              </div>
           </div>
           <Companies />
         </div>
