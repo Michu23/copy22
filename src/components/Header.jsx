@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../App.css";
 import { ReactComponent as MySvg } from "../assets/Ellipse.svg";
 import Hamburger from "../assets/Mobile/Hamburger.svg";
+import Logo from "../assets/logo.svg";
 
 const Header = () => {
   const [show, setShow] = useState(false);
@@ -28,8 +29,6 @@ const Header = () => {
     window.addEventListener("scroll", function (e) {
       currentScrollPosition = window.pageYOffset;
 
-      console.log("Scroll position", currentScrollPosition);
-      console.log("Previous scroll position", previousScrollPosition);
 
       if (previousScrollPosition - currentScrollPosition < 0) {
         setShow(false);
@@ -45,7 +44,9 @@ const Header = () => {
     <>
       <div className="display__desktop">
         <div className="header">
-          <div className="logo">Dview.io</div>
+          <div className="logo">
+            <img src={Logo}  alt="" />
+          </div>
           <div className="nav">
             <a href="/">Platform</a>
             <MySvg />
@@ -61,8 +62,9 @@ const Header = () => {
         </div>{" "}
       </div>
       <div className="display__mobile ">
-        <div className="mobile__header">
-          <div className="logo">Dview.io</div>
+        <div className="top__mobile">
+          <div className="mobile__header">
+          <div className="logo"><img src={Logo}  alt="" /></div>
           <div className="hamburger__mob">
           <a href="#primary" className={`menu-link ${menuActive ? 'active' : ''}`} onClick={handleMenuClick}>
       <span class="line line-1"></span>
@@ -98,6 +100,8 @@ const Header = () => {
         </div>
           )
         }
+        </div>
+        
         
       </div>
     </>

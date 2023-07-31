@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { ReactComponent as MySvg } from "../assets/Icons/arrow-right-circle.svg";
-import { ReactComponent as Banner } from "../assets/Hero/Banner.svg";
 import { ReactComponent as Ell } from "../assets/Ellips.svg";
 import { ReactComponent as Grid } from "../assets/Maskgroup.svg";
 
@@ -11,7 +10,8 @@ import Pipeline from "../components/Home/Pipeline";
 import Success from "../components/Home/Success";
 import FAQs from "../components/Home/FAQs";
 import BannerMob from "../assets/Mobile/BannerMob.svg";
-import Bannerr from "../assets/Hero/BannerFinal.svg";
+
+import Banner from "../components/Home/Banner";
 
 import Group1 from "../assets/Group1.svg";
 import Group2 from "../assets/Group2.svg";
@@ -45,146 +45,16 @@ const Home = () => {
               <a href="hi">Get Started</a>
               <MySvg />
             </div>
-            <div className="banner__web">
-              {/* <Bannerr /> */}
-              <div className="main__container">
-                <div className="menu__container"
-                  onMouseEnter={() =>{
-                   
-                      setCard("Ingestion");
-                   
-                  }}
-                  onMouseLeave={() =>{
-                    setCard("");
-                  }}
-                >
-                  <div className="menu c4 ">
-                    <div>
-
-                    <h3>Ingestion</h3>
-                    {
-                      card === "Ingestion" && <p>
-                    With an upstream semantic layer, create a centralized, single source of truth—with consistent metrics you only need to define once.
-                    </p>
-                    }
-                   
-                    </div>
-                    <img src={Group4} className="img" alt="" />
-                  </div>
-                </div>
-                <div className="menu__container"
-                 onMouseEnter={() =>{
-                  setTimeout(() =>{
-                    setCard("Data");
-                  },500);
-                }}
-                onMouseLeave={() =>{
-                  setCard("");
-
-                }}
-                >
-                  <div className="menu c5 ">
-                    <div>
-                    <h3>
-                      Data
-                      <br />
-                      Modelling
-                    </h3>
-                    {
-                      card === "Data" && <p>
-                    With an upstream semantic layer, create a centralized, single source of truth—with consistent metrics you only need to define once.
-
-                      </p>
-                    }
-                   </div>
-                    <img src={Group5} className="img" alt="" />
-                  </div>
-                </div>
-                <div className="menu__container"
-                  onMouseEnter={() =>{
-                    setTimeout(() =>{
-                      setCard("Caching");
-                    },500);
-                  }}
-                  onMouseLeave={() =>{
-                    setCard("");
-                  }}
-                >
-                  <div className="menu c1">
-                    <div>
-
-                    <h3>Caching</h3>
-                    {
-                      card === "Caching" && <p>
-                    With an upstream semantic layer, create a centralized, single source of truth—with consistent metrics you only need to define once.
-                    </p>
-                    }
-                   
-                    </div>
-                    <img src={Group1} className="img" alt="" />
-                  </div>
-                </div>
-                <div className="menu__container"
-                   onMouseEnter={() =>{
-                    setTimeout(() =>{
-                      setCard("Access");
-                    },500);
-                  }}
-                  onMouseLeave={() =>{
-                    setCard("");
-                  }}
-                >
-                  <div className="menu c2">
-                    <div>
-
-                    
-                    <h3>
-                      Access
-                      <br />
-                      Control
-                    </h3>
-                    {
-                      card === "Access" && <p>
-                    With an upstream semantic layer, create a centralized, single source of truth—with consistent metrics you only need to define once.
-                    </p>
-                    }
-                   </div>
-                    <img src={Group2} className="img" alt="" />
-                  </div>
-                </div>
-                <div className="menu__container"
-
-                   onMouseEnter={() =>{
-                    setTimeout(() =>{
-                      setCard("API");
-                    },500);
-                  }}
-                  onMouseLeave={() =>{
-                    setCard("");
-                  }}
-                >
-                  <div className="menu c3 ">
-                    <div>
-
-                    <h3>API's</h3>
-                      {
-                        card === "API" && <p>
-                          With an upstream semantic layer, create a centralized, single source of truth—with consistent metrics you only need to define once.
-                        </p>
-                      }
-                   
-                    </div>
-                    <img src={Group3} className="img" alt="" />
-                  </div>
-                </div>
-              </div>
+            {/* <div className="banner__web">
+              <Bannerr />
+              
               <img src={Bannerr} style={{
                 marginTop: "-15rem",
                 width: "100%",
               }} alt="" />
-              {/* <Banner /> */}
               
-            </div>
+            </div> */}
+            <Banner />
             <div className="grid">
               <Grid />
             </div>
@@ -211,7 +81,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="banner__mob">
+          {/* <div className="banner__mob">
             <img src={BannerMob} className="banner__img__mobile" alt="" />
             <div className="main__container__mm">
                 <div className="menu__container__mm"
@@ -343,7 +213,8 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-          </div>
+          </div> */}
+          <Banner/>
           <Companies />
         </div>
       </div>

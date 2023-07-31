@@ -1,7 +1,8 @@
 import React, { useRef, useState } from "react";
 import Left from "../../assets/leftarrow.svg";
 import Right from "../../assets/rightarrow.svg";
-import Pro from "../../assets/Success/propic.png";
+import Pro from "../../assets/Success/Brittany.jpeg";
+import Pro2 from "../../assets/Success/GearX.jpeg";
 
 const Success = () => {
   const containerRef = useRef(null);
@@ -117,93 +118,24 @@ const Success = () => {
     {
       heading:
         "Positioning our brand by highlighting success stories that back",
-      para: "Our data management solutions offer full observability and monitoring capabilities across every data operation, providing you with the confidence to fully trust and rely on your data. Reduction in time from raw data to insights on a dashboard. Reduction in time from raw data to insights on a dashboard. Reduction in time from raw data to insights on a dashboard. Reduction in time from raw data to insights on a dashboard. Reduction in time from raw data to insights on a dashboard. ",
-      img: Pro,
-      name: "Bashooka",
-      position: "CEO",
+      para: "Transitioning from spreadsheets to real-time dashboards was a game-changer for us, leading to significant time savings and reduced cloud costs. Dview facilitated this seamless shift promptly, and their exceptional customer support further convinced us to opt for the upfront payment of the yearly fee.",
+      img: Pro2,
+      name: "Madhu S Naidu",
+      position: "Founder, GearX",
       percentage: "50%",
       ratetext: "Reduction in time from raw data to insights on a dashboard.",
     },
     {
       heading:
         "Positioning our brand by highlighting success stories that back",
-      para: "Our data management solutions offer full observability and monitoring capabilities across every data operation, providing you with the confidence to fully trust and rely on your data.",
+      para: "Our old process took a day to download XL data from our database and then filter data to get all the information like sales, margin/site, daily/weekly production, supplier costs, and lead times to receive, quote, approve, fix, and ship, and finally sort data by product type, warranty, etc. Our new process with Dview platform is now a one-click custom query engine and analytics dashboards in real-time! \n\nKey outcome: we are more responsive to our customers’ issues and identify issues before they become a customer problem.",
       img: Pro,
-      name: "Bashooka",
-      position: "CEO",
+      name: "Brittany B.",
+      position: "Key Account Manager, E-commerce Business Unit, AH Group.",
       percentage: "50%",
-      ratetext: "Reduction in time from raw data to insights on a dashboard",
+      ratetext: "Reduction in time from raw data to insights on a dashboard.",
     },
-    {
-      heading:
-        "Positioning our brand by highlighting success stories that back",
-      para: "Our data management solutions offer full observability and monitoring capabilities across every data operation, providing you with the confidence to fully trust and rely on your data. Reduction in time from raw data to insights on a dashboard. Reduction in time from raw data to insights on a dashboard. Reduction in time from raw data to insights on a dashboard. Reduction in time from raw data to insights on a dashboard.",
-      img: Pro,
-      name: "Bashooka",
-      position: "CEO",
-      percentage: "50%",
-      ratetext: "Reduction in time from raw data to insights on a dashboard",
-    },
-    {
-      heading:
-        "Positioning our brand by highlighting success stories that back",
-      para: "Our data management solutions offer full observability and monitoring capabilities across every data operation, providing you with the confidence to fully trust and rely on your data. Reduction in time from raw data to insights on a dashboard. Reduction in time from raw data to insights on a dashboard. Reduction in time from raw data to insights on a dashboard. Reduction in time from raw data to insights on a dashboard. Reduction in time from raw data to insights on a dashboard. Reduction in time from raw data to insights on a dashboard. Reduction in time from raw data to insights on a dashboard. Reduction in time from raw data to insights on a dashboard. Reduction in time from raw data to insights on a dashboard.",
-      img: Pro,
-      name: "Bashooka",
-      position: "CEO",
-      percentage: "50%",
-      ratetext: "Reduction in time from raw data to insights on a dashboard",
-    },
-    {
-      heading:
-        "Positioning our brand by highlighting success stories that back",
-      para: "Our data management solutions offer full observability and monitoring capabilities across every data operation, providing you with the confidence to fully trust and rely on your data.",
-      img: Pro,
-      name: "Bashooka",
-      position: "CEO",
-      percentage: "50%",
-      ratetext: "Reduction in time from raw data to insights on a dashboard",
-    },
-    {
-      heading:
-        "Positioning our brand by highlighting success stories that back",
-      para: "Our data management solutions offer full observability and monitoring capabilities across every data operation, providing you with the confidence to fully trust and rely on your data.",
-      img: Pro,
-      name: "Bashooka",
-      position: "CEO",
-      percentage: "50%",
-      ratetext: "Reduction in time from raw data to insights on a dashboard",
-    },
-    {
-      heading:
-        "Positioning our brand by highlighting success stories that back",
-      para: "Our data management solutions offer full observability and monitoring capabilities across every data operation, providing you with the confidence to fully trust and rely on your data.",
-      img: Pro,
-      name: "Bashooka",
-      position: "CEO",
-      percentage: "50%",
-      ratetext: "Reduction in time from raw data to insights on a dashboard",
-    },
-    {
-      heading:
-        "Positioning our brand by highlighting success stories that back",
-      para: "Our data management solutions offer full observability and monitoring capabilities across every data operation, providing you with the confidence to fully trust and rely on your data.",
-      img: Pro,
-      name: "Bashooka",
-      position: "CEO",
-      percentage: "50%",
-      ratetext: "Reduction in time from raw data to insights on a dashboard",
-    },
-    {
-      heading:
-        "Positioning our brand by highlighting success stories that back",
-      para: "Our data management solutions offer full observability and monitoring capabilities across every data operation, providing you with the confidence to fully trust and rely on your data.",
-      img: Pro,
-      name: "Bashooka",
-      position: "CEO",
-      percentage: "50%",
-      ratetext: "Reduction in time from raw data to insights on a dashboard",
-    },
+
   ];
 
   return (
@@ -239,8 +171,8 @@ const Success = () => {
                         <div className="rating__people">
                           <img src={story.img} alt="" />
                           <div className="ratinginfo">
-                            <h6 className="ratingname">Bashooka</h6>
-                            <p className="ratingrole">CEO</p>
+                            <h6 className="ratingname">{story.name}</h6>
+                            <p className="ratingrole">{story.position}</p>
                           </div>
                         </div>
                         <div className="star__rating">
@@ -269,6 +201,7 @@ const Success = () => {
       <div className="display__mobile">
         <div className="success__mob">
           <h2>Success Stories</h2>
+        
           <div
             ref={containerRef2}
             className="mob__success__box__container"
@@ -276,6 +209,9 @@ const Success = () => {
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}
           >
+
+{successStories.map((story, index) => {
+                return (
             <div className="success__mob__boxes">
               <div className="mob__box__content">
                 <h4>
@@ -283,9 +219,7 @@ const Success = () => {
                   back
                 </h4>
                 <p>
-                  Our data management solutions offer full observability and
-                  monitoring capabilities across every data operation, providing
-                  you with the confidence to fully trust and rely on your data.
+                {story.para}
                 </p>
                 <hr />
 
@@ -301,113 +235,16 @@ const Success = () => {
                 </div>
                 <hr />
                 <div className="mob__success__profile">
-                  <img src={Pro} alt="" />
+                  <img src={story.img} alt="" />
                   <div className="ratinginfo">
-                    <h6 className="ratingname">Bashooka</h6>
-                    <p className="ratingrole">CEO</p>
+                    <h6 className="ratingname">{story.name}</h6>
+                    <p className="ratingrole">{story.position}</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="success__mob__boxes">
-              <div className="mob__box__content">
-                <h4>
-                  Positioning our brand by highlighting success stories that
-                  back
-                </h4>
-                <p>
-                  Our data management solutions offer full observability and
-                  monitoring capabilities across every data operation, providing
-                  you with the confidence to fully trust and rely on your data.
-                </p>
-                <hr />
-
-                <div className="mob__rating">
-                  <div className="mob__perc">
-                    <h4>50%</h4>
-                  </div>
-                  <div className="rating__content">
-                    <p>
-                      Reduction in time from raw data to insights on a dashboard
-                    </p>
-                  </div>
-                </div>
-                <hr />
-                <div className="mob__success__profile">
-                  <img src={Pro} alt="" />
-                  <div className="ratinginfo">
-                    <h6 className="ratingname">Bashooka</h6>
-                    <p className="ratingrole">CEO</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="success__mob__boxes">
-              <div className="mob__box__content">
-                <h4>
-                  Positioning our brand by highlighting success stories that
-                  back
-                </h4>
-                <p>
-                  Our data management solutions offer full observability and
-                  monitoring capabilities across every data operation, providing
-                  you with the confidence to fully trust and rely on your data.
-                </p>
-                <hr />
-
-                <div className="mob__rating">
-                  <div className="mob__perc">
-                    <h4>50%</h4>
-                  </div>
-                  <div className="rating__content">
-                    <p>
-                      Reduction in time from raw data to insights on a dashboard
-                    </p>
-                  </div>
-                </div>
-                <hr />
-                <div className="mob__success__profile">
-                  <img src={Pro} alt="" />
-                  <div className="ratinginfo">
-                    <h6 className="ratingname">Bashooka</h6>
-                    <p className="ratingrole">CEO</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="success__mob__boxes">
-              <div className="mob__box__content">
-                <h4>
-                  Positioning our brand by highlighting success stories that
-                  back
-                </h4>
-                <p>
-                  Our data management solutions offer full observability and
-                  monitoring capabilities across every data operation, providing
-                  you with the confidence to fully trust and rely on your data.
-                </p>
-                <hr />
-
-                <div className="mob__rating">
-                  <div className="mob__perc">
-                    <h4>50%</h4>
-                  </div>
-                  <div className="rating__content">
-                    <p>
-                      Reduction in time from raw data to insights on a dashboard
-                    </p>
-                  </div>
-                </div>
-                <hr />
-                <div className="mob__success__profile">
-                  <img src={Pro} alt="" />
-                  <div className="ratinginfo">
-                    <h6 className="ratingname">Bashooka</h6>
-                    <p className="ratingrole">CEO</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+                );
+            })}
           </div>
 
           <div className="snav__mob">

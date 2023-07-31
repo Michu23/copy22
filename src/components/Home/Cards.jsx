@@ -7,6 +7,7 @@ import Embark from "../../assets/Cards/Embark.svg";
 import Effortless from "../../assets/Cards/Effortless.svg";
 import Noshow from "../../assets/Cards/Noshow.svg";
 import Prioritize from "../../assets/Cards/Prioritize.svg";
+import Disagreement from "../../assets/Cards/Disagreement.svg";
 
 const C1 = () => {
   return (
@@ -207,7 +208,7 @@ const C5 = () => {
   return (
     <div className="cards">
       <div className="images">
-        <img src={Embark} className="cc" />
+        <img src={Disagreement} className="cc" />
       </div>
       <div className="text">
         <div className="headings">
@@ -431,7 +432,7 @@ const CM5 = () => {
   return (
     <div className="mob__card__container">
       <div className="image__mob">
-        <img src={Embark} className="cc mm" />
+        <img src={Disagreement} className="cc mm" />
       </div>
       <div className="text__mob">
         
