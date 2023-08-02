@@ -8,6 +8,7 @@ import Effortless from "../../assets/Cards/Effortless.svg";
 import Noshow from "../../assets/Cards/Noshow.svg";
 import Prioritize from "../../assets/Cards/Prioritize.svg";
 import Disagreement from "../../assets/Cards/Disagreement.svg";
+import { Link } from "react-router-dom";
 
 const C1 = () => {
   return (
@@ -62,11 +63,12 @@ const C1 = () => {
           downtime, unparalleled automation, and virtually zero maintenance.
           Streamline your data process with our powerful platform.
         </div>
-        <a href="">
+        <Link to="*">
           <button className="know__more">
             <span>Know more</span>
           </button>
-        </a>
+          </Link>
+       
       </div>
     </div>
   );
@@ -111,11 +113,11 @@ const C2 = () => {
           lightning-fast analytical queries, while open storage formats ensure
           seamless interoperability across your data ecosystem.
         </div>
-        <a href="">
+        <Link to="*">
           <button className="know__more">
             <span>Know more</span>
           </button>
-        </a>
+        </Link>
       </div>
       <div className="images">
         <img src={Effortless} className="cc" />
@@ -162,11 +164,11 @@ const C3 = () => {
           architecture ensures auto-scalability with the ability to shrink back
           and minimize redundancy.
         </div>
-        <a href="">
+        <Link to="*">
           <button className="know__more">
             <span>Know more</span>
           </button>
-        </a>
+        </Link>
       </div>
     </div>
   );
@@ -191,11 +193,11 @@ const C4 = () => {
           ensure data protection. Safeguard against data breaches by masking and
           anonymizing data.
         </div>
-        <a href="">
+        <Link to="*">
           <button className="know__more">
             <span>Know more</span>
           </button>
-        </a>
+        </Link>
       </div>
       <div className="images">
         <img src={Prioritize} className="cc" />
@@ -223,11 +225,11 @@ const C5 = () => {
           ideation to implementation. Achieve true collaboration and efficient
           data pipeline management with our platform.
         </div>
-        <a href="">
+        <Link to="*">
           <button className="know__more">
             <span>Know more</span>
           </button>
-        </a>
+        </Link>
       </div>
     </div>
   );
@@ -290,11 +292,11 @@ const CM1 = () => {
           downtime, unparalleled automation, and virtually zero maintenance.
           Streamline your data process with our powerful platform.
         </div>
-        <a href="">
+        <Link to="*">
           <button className="know__more">
             <span>Know more</span>
           </button>
-        </a>
+        </Link>
       </div>
     </div>
   );
@@ -341,11 +343,11 @@ const CM2 = () => {
         <div className="paras">
         Break free from data silos, and embrace the Lakehouse revolution to create a single source of truth. Our single-copy architecture empowers lightning-fast analytical queries, while open storage formats ensure seamless interoperability across your data ecosystem.
         </div>
-        <a href="">
+        <Link to="*">
           <button className="know__more">
             <span>Know more</span>
           </button>
-        </a>
+      </Link>
       </div>
     </div>
   )
@@ -391,11 +393,11 @@ const CM3 = () => {
         </div>
         <div className="paras">
         Unlock actionable insights with a centralized metrics layer for reliable data consumption. Our separate compute and storage architecture ensures auto-scalability with the ability to shrink back and minimize redundancy.         </div>
-        <a href="">
+        <Link to="*">
           <button className="know__more">
             <span>Know more</span>
           </button>
-        </a>
+        </Link>
       </div>
     </div>
   )
@@ -418,11 +420,12 @@ const CM4 = () => {
         </div>
         <div className="paras">
         Enhance data security with a dedicated VPC deployment tailored to your specific requirements. Implement RBAC control for team access and ensure data protection. Safeguard against data breaches by masking and anonymizing data. 
-        </div>        <a href="">
+        </div>        
+        <Link to="*">
           <button className="know__more">
             <span>Know more</span>
           </button>
-        </a>
+        </Link>
       </div>
     </div>
   )
@@ -443,11 +446,12 @@ const CM5 = () => {
           <br />
         </div>
         <div className="paras">
-        Collaborate with your team to build data pipelines seamlessly. Leverage the semantics layer to enhance data understanding for stakeholders and minimize redundant pipelines. Stay in control with the Gitops engine for version control, ensuring project progress from ideation to implementation. Achieve true collaboration and efficient data pipeline management with our platform.        </div>        <a href="">
+        Collaborate with your team to build data pipelines seamlessly. Leverage the semantics layer to enhance data understanding for stakeholders and minimize redundant pipelines. Stay in control with the Gitops engine for version control, ensuring project progress from ideation to implementation. Achieve true collaboration and efficient data pipeline management with our platform.        </div> 
+        <Link to="*">
           <button className="know__more">
             <span>Know more</span>
           </button>
-        </a>
+        </Link>
       </div>
     </div>
   )

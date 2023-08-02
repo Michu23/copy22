@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { ReactComponent as MySvg } from "../assets/Icons/arrow-right-circle.svg";
 import { ReactComponent as Ell } from "../assets/Ellips.svg";
 import { ReactComponent as Grid } from "../assets/Maskgroup.svg";
@@ -9,19 +9,12 @@ import Lake from "../components/Home/Lake";
 import Pipeline from "../components/Home/Pipeline";
 import Success from "../components/Home/Success";
 import FAQs from "../components/Home/FAQs";
-import BannerMob from "../assets/Mobile/BannerMob.svg";
 
 import Banner from "../components/Home/Banner";
-
-import Group1 from "../assets/Group1.svg";
-import Group2 from "../assets/Group2.svg";
-import Group3 from "../assets/Group3.svg";
-import Group4 from "../assets/Group4.svg";
-import Group5 from "../assets/Group5.svg";
+import { Link } from "react-router-dom";
 
 const Home = () => {
-
-  const [card,setCard] = useState("");
+  const [card, setCard] = useState("");
 
   return (
     <>
@@ -37,14 +30,19 @@ const Home = () => {
           </div>
           <div className="description">
             <p>
-            Upgrade your data analytics scaling now! Our advanced platform centralizes all your data into one place and offers easy access for data consumers. With an open architecture, it ensures faster, reliable, and scalable data solution deployment.
+              Upgrade your data analytics scaling now! Our advanced platform
+              centralizes all your data into one place and offers easy access
+              for data consumers. With an open architecture, it ensures faster,
+              reliable, and scalable data solution deployment.
             </p>
           </div>
           <div className="first">
-            <div className="getstarted">
-              <a href="hi">Get Started</a>
-              <MySvg />
-            </div>
+            <Link to="*">
+              <div className="getstarted">
+                <a href="hi">Get Started</a>
+                <MySvg />
+              </div>
+            </Link>
             {/* <div className="banner__web">
               <Bannerr />
               
@@ -72,14 +70,19 @@ const Home = () => {
               unlock The value of your data at 10x advantage
             </h1>
             <p>
-            Upgrade your data analytics scaling now! Our advanced platform centralizes all your data into one source and offers easy access for data consumers. With an open architecture, it ensures faster, reliable, and scalable data solution deployment.
+              Upgrade your data analytics scaling now! Our advanced platform
+              centralizes all your data into one source and offers easy access
+              for data consumers. With an open architecture, it ensures faster,
+              reliable, and scalable data solution deployment.
             </p>
-            <div className="getstarted__mob">
-              <a href="hi">Get Started</a>
-              <div className="banner__img">
-                <MySvg />
+            <Link to="*">
+              <div className="getstarted__mob">
+                <a href="hi">Get Started</a>
+                <div className="banner__img">
+                  <MySvg />
+                </div>
               </div>
-            </div>
+            </Link>
           </div>
           {/* <div className="banner__mob">
             <img src={BannerMob} className="banner__img__mobile" alt="" />
@@ -214,7 +217,7 @@ const Home = () => {
                 </div>
               </div>
           </div> */}
-          <Banner/>
+          <Banner />
           <Companies />
         </div>
       </div>

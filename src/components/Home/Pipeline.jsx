@@ -2,6 +2,7 @@ import React from 'react'
 import Mask2 from '../../assets/Mask2.svg'
 import Circle from '../../assets/circleflare.svg';
 import Picon from '../../assets/pipeline__icon.svg';
+import { Link } from 'react-router-dom';
 
 const Pbox = ({ph,pd,pa}) => {
     return (
@@ -13,12 +14,14 @@ const Pbox = ({ph,pd,pa}) => {
             <p className="pldescription">
             {pd}
             </p>
+            <Link to="*">
+
+           
             <div className="plbutton">
-                <a href={pa}>
+                <a>
                     Know More
                 </a>
-            </div>
-
+            </div> </Link>
         </div>
     )
 }

@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Flair from './components/Flair';
+import Coming from './pages/Coming';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Flair />
       <Routes>
         <Route index element={ <Home/>} />
+        <Route path='*' element={ <Coming/>} />
       </Routes>
       <Footer />
     </Router>

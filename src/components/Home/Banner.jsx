@@ -32,9 +32,7 @@ const Banner = () => {
             <div
               className="menu__container"
               onMouseEnter={() => {
-                setTimeout(() => {
                 setCard("Ingestion");
-                },400)
               }}
               onMouseLeave={() => {
                 setCard("");

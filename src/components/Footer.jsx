@@ -1,4 +1,6 @@
 import React from "react";
+import Logo from "../assets/logo.svg"
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -23,7 +25,9 @@ const Footer = () => {
       <div className="footer2">
         <div className="footer2__container">
           <div className="logo__and__text">
-            <div className="logo">Dview.io</div>
+            <div className="logo">
+              <img src={Logo} alt="" />
+            </div>
             <div className="text">
               <p>
                 We growing up your business with
@@ -35,21 +39,21 @@ const Footer = () => {
           <div className="footer__links">
             <div className="links__column">
               <b>Platform</b>
-              <a href="a">Plans and Pricing</a>
-              <a href="b">Personal AI manager</a>
-              <a href="c">AI Business Writer</a>
+              <Link to="*">Plans and Pricing</Link>
+              <Link to="*">Personal AI manager</Link>
+              <Link to="*">AI Business Writer</Link>
             </div>
             <div className="links__column">
               <b>Company</b>
-              <a href="a">Blog</a>
-          <a href="b">Career</a>
-          <a href="c">News</a>
+              <Link to="*">Blog</Link>
+          <Link to="*">Career</Link>
+          <Link to="*">News</Link>
             </div>
             <div className="links__column">
               <b>Resources</b>
-              <a href="a">Documentation</a>
-          <a href="b">Papers</a>
-          <a href="c">Press Conferences</a>
+              <Link to="*">Documentation</Link>
+          <Link to="*">Papers</Link>
+          <Link to="*">Press Conferences</Link>
             </div>
           </div>
         </div>
@@ -83,7 +87,7 @@ const Footer = () => {
     <div className="footer2__mob">
       <div className="f2__top">
         <h2>
-          Dview.io
+        <img src={Logo} alt="" />
         </h2>
         <p>
         We growing up your business with 
@@ -97,27 +101,28 @@ personal AI manager.
 <div className="f3ml">
           <h3>Platform</h3>
           <div className="f32">
-            <a href="a">Plans and Pricing</a>
-          <a href="b">Personal AI manager</a>
-          <a href="c">AI Business Writer</a>
+          
+            <Link to="*">Plans and Pricing</Link>
+          <Link to="*">Personal AI manager</Link>
+          <Link to="*">AI Business Writer</Link>
           </div>
           
         </div>
 <div className="f3ml">
           <h3>Company</h3>
           <div className="f32">
-            <a href="a">Blog</a>
-          <a href="b">Career</a>
-          <a href="c">News</a>
+            <Link to="*">Blog</Link>
+          <Link to="*">Career</Link>
+          <Link to="*">News</Link>
           </div>
           
         </div>
 <div className="f3ml">
           <h3>Resources</h3>
           <div className="f32">
-            <a href="a">Documentation</a>
-          <a href="b">Papers</a>
-          <a href="c">Press Conferences</a>
+            <Link to="*">Documentation</Link>
+          <Link to="*">Papers</Link>
+          <Link to="*">Press Conferences</Link>
           </div>
           
         </div>

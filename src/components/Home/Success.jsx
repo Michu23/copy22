@@ -128,10 +128,10 @@ const Success = () => {
     {
       heading:
         "Positioning our brand by highlighting success stories that back",
-      para: "Our old process took a day to download XL data from our database and then filter data to get all the information like sales, margin/site, daily/weekly production, supplier costs, and lead times to receive, quote, approve, fix, and ship, and finally sort data by product type, warranty, etc. Our new process with Dview platform is now a one-click custom query engine and analytics dashboards in real-time! \n\nKey outcome: we are more responsive to our customers’ issues and identify issues before they become a customer problem.",
+      para: "In the past, we spent a day manually downloading and filtering Excel data from our database for crucial information. Now, with Dview platform, it's a one-click custom query engine and real-time analytics dashboards, making us more responsive to customers and proactive in addressing potential issues.",
       img: Pro,
       name: "Brittany B.",
-      position: "Key Account Manager, E-commerce Business Unit, AH Group.",
+      position: "Key Account Manager, \nAH Group.",
       percentage: "50%",
       ratetext: "Reduction in time from raw data to insights on a dashboard.",
     },
@@ -165,6 +165,35 @@ const Success = () => {
                       <div className="textbox">
                         <p className="storytexts">{story.para}</p>
                       </div>
+                      <hr className="shr" />
+                      <div className="rating">
+                        <div className="rating__people">
+                          <img src={story.img} alt="" />
+                          <div className="ratinginfo">
+                            <h6 className="ratingname">{story.name}</h6>
+                            <p className="ratingrole">{story.position}</p>
+                          </div>
+                        </div>
+                        <div className="star__rating">
+                          <h3 className="spercentage">50%</h3>
+                          <p className="scontent">
+                            Reduction in time from raw data <br />
+                            to insights on a dashboard{" "}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+              {successStories.map((story, index) => {
+                return (
+                  <div className="story">
+                    <div className="storytext">
+                      <h2 className="storyheading">{story.heading}</h2>
+                      <div className="textbox">
+                        <p className="storytexts">{story.para}</p>
+                      </div>
 
                       <hr className="shr" />
                       <div className="rating">
@@ -187,7 +216,6 @@ const Success = () => {
                   </div>
                 );
               })}
-
               <div
                 style={{
                   padding: "1.5rem",
@@ -209,7 +237,41 @@ const Success = () => {
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}
           >
+{successStories.map((story, index) => {
+                return (
+            <div className="success__mob__boxes">
+              <div className="mob__box__content">
+                <h4>
+                  Positioning our brand by highlighting success stories that
+                  back
+                </h4>
+                <p>
+                {story.para}
+                </p>
+                <hr />
 
+                <div className="mob__rating">
+                  <div className="mob__perc">
+                    <h4>50%</h4>
+                  </div>
+                  <div className="rating__content">
+                    <p>
+                      Reduction in time from raw data to insights on a dashboard
+                    </p>
+                  </div>
+                </div>
+                <hr />
+                <div className="mob__success__profile">
+                  <img src={story.img} alt="" />
+                  <div className="ratinginfo">
+                    <h6 className="ratingname">{story.name}</h6>
+                    <p className="ratingrole">{story.position}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+                );
+            })}
 {successStories.map((story, index) => {
                 return (
             <div className="success__mob__boxes">
@@ -246,7 +308,6 @@ const Success = () => {
                 );
             })}
           </div>
-
           <div className="snav__mob">
             <img src={Left} alt="" 
             onClick={scrollToLeftt}

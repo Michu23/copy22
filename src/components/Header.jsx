@@ -3,6 +3,7 @@ import "../App.css";
 import { ReactComponent as MySvg } from "../assets/Ellipse.svg";
 import Hamburger from "../assets/Mobile/Hamburger.svg";
 import Logo from "../assets/logo.svg";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [show, setShow] = useState(false);
@@ -45,7 +46,9 @@ const Header = () => {
       <div className="display__desktop">
         <div className="header">
           <div className="logo">
+            <Link to="/">
             <img src={Logo}  alt="" />
+            </Link>
           </div>
           <div className="nav">
             <a href="/">Platform</a>
