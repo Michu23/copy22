@@ -38,9 +38,9 @@ const FAQs = () => {
                       <div className="topelement cp"
                       onClick={() => handleToggle(index)}
                       >
-                        <div>
+                       
                           <h5>{faq.question}</h5>{" "}
-                        </div>
+                       
                         <div
                           className={` ${
                             expandedIndex === index

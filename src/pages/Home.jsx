@@ -20,8 +20,8 @@ const Home = () => {
     <>
       <div className="display__desktop">
         <div className="first">
-          <div className="heading">
-            <h1>
+          <div className="heading ch">
+            <h1 >
               Unlock The Value Of Your Data
               <br />
               at <span className="colorheading">10x Price Performance</span>

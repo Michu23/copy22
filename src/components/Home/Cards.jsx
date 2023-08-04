@@ -38,7 +38,7 @@ const C1 = () => {
             <p className="ch">Reliable</p>
           </div>
         </div>
-        <div className="headings">
+        <div className="headings ch">
           <h1>
             Embark on your data journey
             <br />
@@ -56,7 +56,7 @@ const C1 = () => {
           </h1>
           <br />
         </div>
-        <div className="paras">
+        <div className="content__para paras">
           Ingest data from 100+ sources in near real-time. Transform your data
           into analytics-ready format within minutes using our intuitive no-code
           UI. Say goodbye to biased and black-box solutions. Enjoy zero
@@ -100,14 +100,14 @@ const C2 = () => {
             <p className="ch">Reliable</p>
           </div>
         </div>
-        <div className="headings">
+        <div className="headings ch">
           <h1>
             Effortlessly centralise & streamline data for <br />
             seamless management.
           </h1>
           <br />
         </div>
-        <div className="paras">
+        <div className="content__para paras">
           Break free from data silos, and embrace the Lakehouse revolution to
           create a single source of truth. Our single-copy architecture empowers
           lightning-fast analytical queries, while open storage formats ensure
@@ -119,7 +119,7 @@ const C2 = () => {
           </button>
         </Link>
       </div>
-      <div className="images">
+      <div className="images no-left">
         <img src={Effortless} className="cc" />
       </div>
     </div>
@@ -154,11 +154,11 @@ const C3 = () => {
             <p className="ch">Reliable</p>
           </div>
         </div>
-        <div className="headings">
+        <div className="headings ch">
           <h1>No Show Never Happens. Query engine that autoscales.</h1>
           <br />
         </div>
-        <div className="paras">
+        <div className="content__para paras">
           Unlock actionable insights with a centralized metrics layer for
           reliable data consumption. Our separate compute and storage
           architecture ensures auto-scalability with the ability to shrink back
@@ -177,9 +177,8 @@ const C3 = () => {
 const C4 = () => {
   return (
     <div className="cards">
-      {" "}
       <div className="text">
-        <div className="headings">
+        <div className="headings ch ">
           <h1>
             Prioritise Data Security.
             <br />
@@ -187,7 +186,7 @@ const C4 = () => {
           </h1>
           <br />
         </div>
-        <div className="paras">
+        <div className="content__para paras">
           Enhance data security with a dedicated VPC deployment tailored to your
           specific requirements. Implement RBAC control for team access and
           ensure data protection. Safeguard against data breaches by masking and
@@ -213,11 +212,11 @@ const C5 = () => {
         <img src={Disagreement} className="cc" />
       </div>
       <div className="text">
-        <div className="headings">
+        <div className="headings ch">
           <h1>Reduce data diasgreement. Foster team Collaboration.</h1>
           <br />
         </div>
-        <div className="paras">
+        <div className="content__para paras">
           Collaborate with your team to build data pipelines seamlessly.
           Leverage the semantics layer to enhance data understanding for
           stakeholders and minimize redundant pipelines. Stay in control with
@@ -267,7 +266,7 @@ const CM1 = () => {
             <p className="ch">Reliable</p>
           </div>
         </div>
-        <div className="headings">
+        <div className="headings ch">
           <h1>
             Embark on your data journey
             <br />
@@ -285,7 +284,7 @@ const CM1 = () => {
           </h1>
           <br />
         </div>
-        <div className="paras">
+        <div className="content__para paras">
           Ingest data from 100+ sources in near real-time. Transform your data
           into analytics-ready format within minutes using our intuitive no-code
           UI. Say goodbye to biased and black-box solutions. Enjoy zero
@@ -334,13 +333,13 @@ const CM2 = () => {
             <p className="ch">Reliable</p>
           </div>
         </div>
-        <div className="headings">
+        <div className="headings ch">
           <h1>
           Effortlessly centralize and streamline data for seamless management.
           </h1>
           <br />
         </div>
-        <div className="paras">
+        <div className="content__para paras">
         Break free from data silos, and embrace the Lakehouse revolution to create a single source of truth. Our single-copy architecture empowers lightning-fast analytical queries, while open storage formats ensure seamless interoperability across your data ecosystem.
         </div>
         <Link to="*">
@@ -385,13 +384,13 @@ const CM3 = () => {
             <p className="ch">Reliable</p>
           </div>
         </div>
-        <div className="headings">
+        <div className="headings ch">
           <h1>
           No Show Never Happens. Query engine that never fails to deliver.
           </h1>
           <br />
         </div>
-        <div className="paras">
+        <div className="content__para paras">
         Unlock actionable insights with a centralized metrics layer for reliable data consumption. Our separate compute and storage architecture ensures auto-scalability with the ability to shrink back and minimize redundancy.         </div>
         <Link to="*">
           <button className="know__more">
@@ -412,13 +411,13 @@ const CM4 = () => {
       </div>
       <div className="text__mob">
         
-        <div className="headings">
+        <div className="headings ch">
           <h1>
           Priortize Data Security. Streamline your data flows with our platform. 
                    </h1>
           <br />
         </div>
-        <div className="paras">
+        <div className="content__para paras">
         Enhance data security with a dedicated VPC deployment tailored to your specific requirements. Implement RBAC control for team access and ensure data protection. Safeguard against data breaches by masking and anonymizing data. 
         </div>        
         <Link to="*">
@@ -439,13 +438,13 @@ const CM5 = () => {
       </div>
       <div className="text__mob">
         
-        <div className="headings">
+        <div className="headings ch">
           <h1>
           Reduce Data Disagreement. Foster Team Collaboration.        
                      </h1>
           <br />
         </div>
-        <div className="paras">
+        <div className="content__para paras">
         Collaborate with your team to build data pipelines seamlessly. Leverage the semantics layer to enhance data understanding for stakeholders and minimize redundant pipelines. Stay in control with the Gitops engine for version control, ensuring project progress from ideation to implementation. Achieve true collaboration and efficient data pipeline management with our platform.        </div> 
         <Link to="*">
           <button className="know__more">
@@ -464,7 +463,7 @@ const Cards = () => {
     <>
       <div className="display__desktop">
         <div
-          className="first"
+          className="firstw"
           style={{
             position: "relative",
           }}
@@ -500,27 +499,23 @@ const Cards = () => {
           <C1 />
           <C2 />
           <C3 />
-          <div
-            className="first"
-            style={{
-              position: "relative",
-            }}
-          >
+          
             <img
               src={Circle}
               alt=""
               style={{
                 position: "absolute",
                 zIndex: "-1",
-                right: "-20rem",
+                right: "-10rem",
+                marginTop: "7rem",
               }}
             />
-          </div>
+          
           <C4 />
           <C5 />
         </div>
         <div
-          className="first"
+          className="firstw"
           style={{
             position: "relative",
           }}

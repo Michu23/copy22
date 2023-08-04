@@ -130,10 +130,22 @@
       .cls-8 {
         stroke-dasharray: 0 0 3.9 3.9;
       }
+       @keyframes moveDottedLine {
+                0% {
+                    stroke-dashoffset: 0;
+                }
+
+                100% {
+                    stroke-dashoffset: -250;
+                }
+            }
 
       .cls-8, .cls-9, .cls-10, .cls-11, .cls-12 {
         stroke: #fff;
         stroke-miterlimit: 10;
+                animation: moveDottedLine 20s linear infinite;
+
+
       }
 
       .cls-9 {
@@ -346,6 +358,42 @@
       .cls-83 {
         letter-spacing: -.11em;
       }
+
+       .cls-69 , .cls-73, .cls-55 ,.cls-54, .cls-57, .cls-56, .cls-59{
+  animation: up-down linear infinite 20s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  -webkit-animation: up-down linear 4s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: up-down linear 4s;
+  -moz-animation-iteration-count: infinite;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: up-down linear 4s;
+  -o-animation-iteration-count: infinite;
+  -o-transform-origin: 50% 50%;
+  -ms-animation: up-down linear 4s;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 50% 50%;
+}
+
+@keyframes up-down{
+  0% {
+    transform:  translate(1px,0px)  ;
+  }
+  24% {
+    transform:  translate(1px,-10px)  ;
+  }
+  50% {
+    transform:  translate(1px,0px)  ;
+  }
+  74% {
+    transform:  translate(1px,-10px)  ;
+  }
+  100% {
+    transform:  translate(1px,0px)  ;
+  }
+}
     </style>
     <linearGradient id="linear-gradient" x1="-12701.66" y1="-565.73" x2="-12708.6" y2="-449.81" gradientTransform="translate(-11971.96 700) rotate(-180) scale(1 -1)" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#203567"/>
@@ -746,6 +794,7 @@
     <polygon class="cls-70" points="464.4 272.43 376 221.63 464.4 170.93 552.8 221.33 464.4 272.43"/>
     <polygon class="cls-74" points="464.6 402.43 552.5 352.93 552.5 221.33 464.6 272.23 464.6 402.43"/>
     <polygon class="cls-71" points="464.5 402.43 376.6 352.93 376.6 222.73 464.5 272.23 464.5 402.43"/>
+    
     <polygon class="cls-69" points="464.6 271.13 376.2 220.33 464.6 169.63 553 220.13 464.6 271.13"/>
     <polygon class="cls-73" points="465.1 259.83 381.7 213.03 464.6 165.53 547.5 212.83 465.1 259.83"/>
     <polygon class="cls-55" points="465.1 245.93 381.7 199.13 464.6 151.63 547.5 198.93 465.1 245.93"/>
@@ -753,6 +802,7 @@
     <polygon class="cls-57" points="464.6 236.73 547.5 188.93 464.7 141.13 381.7 188.93 464.6 236.73"/>
     <polygon class="cls-56" points="381.7 188.93 381.7 213.03 464.6 260.63 464.6 236.73 381.7 188.93"/>
     <polygon class="cls-59" points="464.6 236.73 547.5 188.93 547.5 212.83 464.6 260.63 464.6 236.73"/>
+   
     <g>
       <path class="cls-34" d="m525.7,332.33l-29.5,15.7c-5.1,2.7-9.2-.9-9.2-8.1v-43.7c0-7.2,4.2-14.8,9.2-17.1l29.5-13.1c4.6-2.1,8.3,1.8,8.3,8.5v41.1c0,6.8-3.7,14.2-8.3,16.7Z"/>
       <g>

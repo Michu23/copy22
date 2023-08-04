@@ -282,6 +282,42 @@
       .cls-65 {
         letter-spacing: -.04em;
       }
+
+      .bb{
+  animation: up-down linear infinite 20s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  -webkit-animation: up-down linear 4s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: up-down linear 4s;
+  -moz-animation-iteration-count: infinite;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: up-down linear 4s;
+  -o-animation-iteration-count: infinite;
+  -o-transform-origin: 50% 50%;
+  -ms-animation: up-down linear 4s;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 50% 50%;
+}
+
+@keyframes up-down{
+  0% {
+    transform:  translate(1px,0px)  ;
+  }
+  24% {
+    transform:  translate(1px,-10px)  ;
+  }
+  50% {
+    transform:  translate(1px,0px)  ;
+  }
+  74% {
+    transform:  translate(1px,-10px)  ;
+  }
+  100% {
+    transform:  translate(1px,0px)  ;
+  }
+}
     </style>
     <linearGradient id="linear-gradient" x1="234.11" y1="142.04" x2="207.69" y2="444.57" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#4057a7"/>
@@ -334,7 +370,7 @@
     <linearGradient id="linear-gradient-19" x1="541.51" y1="217.82" x2="333.44" y2="151.43" xlink:href="#linear-gradient-4"/>
     <linearGradient id="linear-gradient-20" x1="139.63" y1="249.43" x2="481.8" y2="467.41" xlink:href="#linear-gradient"/>
   </defs>
-  <g class="cls-11">
+  <g class="cls-11" transform="translate(0,10)">
     <g id="Layer_1" data-name="Layer 1">
       <rect class="cls-1" y="2.09" width="500" height="500"/>
       <polygon class="cls-21" points="144.12 244.78 144.12 489.8 277.12 577.25 277.12 319.57 144.12 244.78"/>
@@ -394,7 +430,7 @@
         <text class="cls-18" transform="translate(196.1 467.17) rotate(30) scale(1 .87) skewX(26.56)"><tspan x="0" y="0">1</tspan><tspan class="cls-47" x="4.64" y="0">0</tspan><tspan x="12.73" y="0">0</tspan><tspan class="cls-41" x="-11.67" y="16.63">S</tspan><tspan x="-4.48" y="16.63">ou</tspan><tspan class="cls-32" x="9.45" y="16.63">r</tspan><tspan class="cls-41" x="13.69" y="16.63">c</tspan><tspan x="20" y="16.63">es</tspan></text>
       </g>
       <polygon class="cls-48" points="496.32 202.73 360.59 124.74 496.33 46.94 632.05 124.38 496.32 202.73"/>
-      <g class="cls-2">
+      <g class="cls-2 bb">
         <polygon class="cls-35" points="493.07 182.34 365.06 110.49 492.33 37.55 619.58 110.16 493.07 182.34"/>
         <polygon class="cls-34" points="493.07 160.97 365.06 89.13 492.33 16.18 619.58 88.79 493.07 160.97"/>
         <polygon class="cls-36" points="493.07 193.02 365.06 121.17 492.33 48.23 619.58 120.84 493.07 193.02"/>
@@ -542,7 +578,7 @@
         </g>
       </g>
       <g class="cls-8">
-        <g>
+        <g class="bb">
           <path class="cls-14" d="m464.63,69.28c.22.3.33.74.34,1.31s-.11,1.12-.35,1.68c-.24.57-.56,1.09-.99,1.57-.43.48-.92.88-1.48,1.21l-2.96,1.71-1,.58-.03-10.57,1.35-.78,2.44-1.41c.84-.48,1.5-.63,1.99-.45.49.18.74.67.75,1.47,0,.51-.1,1.01-.3,1.52-.2.5-.47.96-.82,1.37-.1.11-.2.22-.3.32.16-.03.31-.04.45-.03.38.03.67.2.9.5Zm-1.48,3.5c.29-.49.44-1.02.44-1.57,0-.59-.16-.97-.47-1.14-.31-.17-.74-.1-1.27.21l-2.31,1.33v3.74s2.4-1.38,2.4-1.38c.52-.3.93-.7,1.22-1.19m-3.63-5.59v3.24s2.19-1.26,2.19-1.26c.52-.3.92-.68,1.21-1.13.29-.45.43-.95.42-1.49,0-.51-.14-.82-.41-.93-.27-.12-.67-.02-1.18.28l-2.23,1.29"/>
           <polygon class="cls-14" points="467.65 61.29 467.68 71.85 466.35 72.62 466.32 62.06 467.65 61.29"/>
           <path class="cls-14" d="m475.29,61.67c.28.42.42,1.01.42,1.77s-.14,1.5-.41,2.26c-.27.75-.66,1.44-1.16,2.07s-1.09,1.14-1.76,1.52-1.25.55-1.75.5-.9-.28-1.18-.72c-.28-.43-.42-1.02-.43-1.77s.14-1.51.42-2.26c.29-.75.67-1.42,1.17-2.04.5-.62,1.08-1.11,1.74-1.5s1.26-.56,1.76-.53c.51.04.9.26,1.17.68Zm-1.18,4.09c.17-.5.25-1.02.25-1.56,0-.8-.19-1.33-.56-1.58-.37-.25-.85-.21-1.44.13s-1.05.84-1.42,1.53c-.37.68-.55,1.42-.55,2.21,0,.54.09.96.25,1.26.17.31.4.48.7.53.3.05.65-.03,1.03-.26.4-.23.75-.54,1.04-.94.29-.4.52-.84.69-1.34"/>

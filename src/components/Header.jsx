@@ -70,9 +70,9 @@ const Header = () => {
           <div className="logo"><img src={Logo}  alt="" /></div>
           <div className="hamburger__mob">
           <a href="#primary" className={`menu-link ${menuActive ? 'active' : ''}`} onClick={handleMenuClick}>
-      <span class="line line-1"></span>
-      <span class="line line-2"></span>
-      <span class="line line-3"></span>
+      <span className="line line-1"></span>
+      <span className="line line-2"></span>
+      <span className="line line-3"></span>
     </a>
           </div>
         </div>

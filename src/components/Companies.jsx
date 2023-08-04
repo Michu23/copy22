@@ -45,7 +45,7 @@ const Companies = () => {
             <img src={Reddit} alt="" />
           </div> */}
           <div
-            class="logos"
+            className="logos"
             style={{
               marginTop: "-90rem",
             }}
@@ -61,7 +61,7 @@ const Companies = () => {
               <img src={Reddit} alt="" />
             </div>
 
-            <div class="logos-slide">
+            <div className="logos-slide">
               <img src={Google} />
               <img src={Pinterest} alt="" />
               <img src={Reddit} alt="" />
@@ -71,7 +71,7 @@ const Companies = () => {
               <img src={Pinterest} alt="" />
               <img src={Reddit} alt="" />
             </div>
-            <div class="logos-slide">
+            <div className="logos-slide">
               <img src={Google} />
               <img src={Pinterest} alt="" />
               <img src={Reddit} alt="" />
@@ -86,7 +86,7 @@ const Companies = () => {
       </div>
       <div className="display__mobile">
       <div
-            class="logos"
+            className="logos"
         
           >
             <div className="logos-slide">
@@ -100,7 +100,7 @@ const Companies = () => {
               <img src={Reddit} alt="" />
             </div>
 
-            <div class="logos-slide">
+            <div className="logos-slide">
               <img src={Google} />
               <img src={Pinterest} alt="" />
               <img src={Reddit} alt="" />
@@ -110,7 +110,7 @@ const Companies = () => {
               <img src={Pinterest} alt="" />
               <img src={Reddit} alt="" />
             </div>
-            <div class="logos-slide">
+            <div className="logos-slide">
               <img src={Google} />
               <img src={Pinterest} alt="" />
               <img src={Reddit} alt="" />
