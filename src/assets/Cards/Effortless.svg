@@ -149,7 +149,7 @@
             .bg {
                 stroke-dasharray: 0 0 4 3;
                 stroke-miterlimit: 10;
-                animation: moveDottedLine 30s linear infinite;
+                animation: moveDottedLine 30s linear infinite !important;
                 opacity: 0.5;
             }
 

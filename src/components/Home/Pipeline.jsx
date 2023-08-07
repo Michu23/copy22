@@ -72,6 +72,7 @@ const Pipeline = () => {
                             zIndex: '-2',
                             right: '-25rem',
                             top: '-20rem',
+                            maxWidth: '100%',
                         }
                     }
                 />

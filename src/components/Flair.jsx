@@ -6,10 +6,9 @@ const Flair = () => {
   return (
     <div className='display__desktop' style={{ width: '80rem'}}>
         <svg xmlns="http://www.w3.org/2000/svg" className='flair' width="1918" height="1520" viewBox="0 0 1918 1520" fill="none" style={{
-width: '1985px',
-  height: '1287px',
-  top: '-100',
-  right: '-200px',
+  height: '1728px',
+  top: '-250',
+  right: '0px',
   fill: 'var(--linear, linear-gradient(199deg, #203567 0%, rgba(10, 25, 61, 0.00) 100%))',
   filter: 'blur(58px)',
   position: 'absolute',

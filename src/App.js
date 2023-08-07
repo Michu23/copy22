@@ -16,7 +16,7 @@ function App() {
   return (
     <Router>
       <Header />
-      <Flair />
+      {/* <Flair /> */}
       <StateProvider>
       <Routes>
         <Route index element={ <Home/>} />

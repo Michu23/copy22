@@ -6,14 +6,15 @@ import Circle from "../../assets/circleflare.svg";
 import Embark from "../../assets/Cards/Embark.svg";
 import Effortless from "../../assets/Cards/Effortless.svg";
 import Noshow from "../../assets/Cards/Noshow.svg";
-import Prioritize from "../../assets/Cards/Prioritize.svg";
+import Prioritize from "../../assets/Cards/Table.svg";
 import Disagreement from "../../assets/Cards/Disagreement.svg";
 import { Link } from "react-router-dom";
 
 const C1 = () => {
   return (
     <div className="cards">
-      <div className="images">
+   
+        <div className="images">
         <img src={Embark} className="cc" />
       </div>
       <div className="text">
@@ -70,6 +71,8 @@ const C1 = () => {
           </Link>
        
       </div>
+   
+      
     </div>
   );
 };
@@ -478,7 +481,11 @@ const Cards = () => {
             }}
           />
         </div>
-        <div>
+        <div
+        style={{
+          position: "relative",
+        }}
+        >
           <img
             src={Circle}
             alt=""
@@ -494,6 +501,7 @@ const Cards = () => {
           className="first"
           style={{
             paddingBottom: "100px",
+            position: "relative",
           }}
         >
           <C1 />
