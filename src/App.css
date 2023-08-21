@@ -371,7 +371,7 @@ h6 {
 .logos-slide {
   display: inline-block;
   animation: 30s slide infinite linear;
-  padding-top: 15rem !important;
+  padding-top: rem !important;
 }
 
 .cards__container{
